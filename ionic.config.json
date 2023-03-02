@@ -1,0 +1,7 @@
+{
+  "name": "beaver-clock-alarm2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
