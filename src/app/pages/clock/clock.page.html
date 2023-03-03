@@ -1,0 +1,19 @@
+<ion-content color="{{backgroundColor}}">
+  <div>
+    <ion-item class="title" color="{{backgroundColor}}"
+      >Beaver Clock Alarm</ion-item
+    >
+  </div>
+  <div class="icons">
+    <ion-icon name="alarm-outline" (click)="presentAlarmAlert()"></ion-icon>
+    <ion-icon name="timer-outline"></ion-icon>
+    <ion-icon name="stopwatch-outline"></ion-icon>
+    <ion-icon name="notifications-outline"></ion-icon>
+    <ion-icon name="settings-outline" (click)="presentColorAlert()"></ion-icon>
+  </div>
+  <div class="clock">
+    <div class="small">{{ today | date:'EEEE, MMMM d, y'}}</div>
+    <div class="large">{{ currentTime | date: 'h:mm:ss' }}</div>
+    <div class="medium">{{ currentTime | date: 'a' }}</div>
+  </div>
+</ion-content>
